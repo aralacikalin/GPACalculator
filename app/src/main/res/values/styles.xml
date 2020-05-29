@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/actionbar_Primary</item>
+        <item name="colorPrimaryDark">@color/actionbar_PrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="courseText">
+        <item name="android:backgroundTint">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:hint">Course Name</item>
+        <item name="android:textColorHint">#B6B5B5</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">center</item>
+
+
+    </style>
+    <style name="courseCredit">
+        <item name="android:backgroundTint">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:hint">Credit</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#B6B5B5</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="courseSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">#ffffff</item>
+        <item name="android:background">#92FFFEFE</item>
+
+    </style>
+
+    <style name="courseLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+</resources>

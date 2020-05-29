@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="app_header">Enter your Grades to calculate your GPA</string>
+    <string name="add_button">Add new Course</string>
+    <string name="calculateButton">Calculate</string>
+
+    <string-array name="gradeOptions">
+        <item>AA</item>
+        <item>BA</item>
+        <item>BB</item>
+        <item>CB</item>
+        <item>CC</item>
+        <item>DC</item>
+        <item>DD</item>
+        <item>FF</item>
+    </string-array>
+
+</resources>
