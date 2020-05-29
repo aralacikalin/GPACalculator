@@ -79,9 +79,12 @@ class MainActivity : AppCompatActivity() {
         courseLayout.addView(courseSpinner)
         courseLayout.addView(closeButton,LinearLayout.LayoutParams(0,ViewGroup.LayoutParams.WRAP_CONTENT,1f))
         courseContainer.addView(courseLayout,LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT))
+
         var param=LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT)
         param.setMargins(20,10,20,10)
         courseLayout.layoutParams=param
+
+
         courses.add(courseLayout)
         courseCreditList.add(courseCredit)
         courseGradeList.add((courseSpinner))
