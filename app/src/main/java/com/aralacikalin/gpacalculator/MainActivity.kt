@@ -14,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.core.view.get
+import androidx.core.view.marginBottom
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     fun onClickAddButton(view: View){
         courseCount++
 
-        var courseLayout =LinearLayout(this)
+        var courseLayout =LinearLayout(ContextThemeWrapper(this, R.style.courseLayout))
         courseLayout.orientation=LinearLayout.HORIZONTAL
         courseLayout.gravity=Gravity.CENTER
 
@@ -78,7 +79,9 @@ class MainActivity : AppCompatActivity() {
         courseLayout.addView(courseSpinner)
         courseLayout.addView(closeButton,LinearLayout.LayoutParams(0,ViewGroup.LayoutParams.WRAP_CONTENT,1f))
         courseContainer.addView(courseLayout,LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT))
-
+        var param=LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT)
+        param.setMargins(20,10,20,10)
+        courseLayout.layoutParams=param
         courses.add(courseLayout)
         courseCreditList.add(courseCredit)
         courseGradeList.add((courseSpinner))

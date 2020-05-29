@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#323232"
-    tools:context=".MainActivity" >
+    android:background="#121212"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/mainLinear"
@@ -24,6 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
+            android:background="#272727"
+            android:elevation="4dp"
             android:text="@string/app_header"
             android:textAlignment="center"
             android:textColor="#FDFDFD"
@@ -54,7 +56,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:elevation="1dp">
 
             <LinearLayout
                 android:id="@+id/courseContainer"
