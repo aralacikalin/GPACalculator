@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     var courseGradeList= arrayListOf<Spinner>()
     var courses= arrayListOf<LinearLayout>()
 
-    var gradeOptions= arrayOf("AA","BA","")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -91,11 +90,32 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun onClickSubmitButton(view: View){
-        //TODO ortalama alma matematiği burda
-        //TODO credit * grade / total credits
        // Log.d("creation","Function call")
         var gpa=calculateGradeSum()/calculateCredits()
-        header.text="%.2f".format(gpa).toString()
+        if(calculateCredits()==0.0){
+            header.text="Please Enter Credit Info"
+        }
+        else if(gpa>=3.5){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Very Good Job!"
+        }
+        else if(gpa>=3.0){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Good Job!"
+        }
+        else if(gpa>=2.5){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Not that bad, but it could be better."
+        }
+        else if(gpa>=2.0){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Not bad, not good either."
+        }
+        else if(gpa>=1.5){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Should be better to pass the term"
+        }
+        else if(gpa>=1.0){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" You may have to repeat this term."
+        }
+        else if(gpa>=0.0){
+            header.text="GPA: "+"%.2f".format(gpa).toString()+" Too many fails you have to repeat this term"
+        }
 
     }
 
